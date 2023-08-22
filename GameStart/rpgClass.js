@@ -21,32 +21,44 @@ alchemist.onclick = alchemistClass;
 // Functions
 
 function knightClass() {
-  let rpgClass = "knight";
+  rpgClass = "knight";
+  const rpgClassValue = rpgClass;
+  localStorage.setItem("rpgClass", rpgClassValue);
   console.log("");
 }
 function rangerClass() {
-  let rpgClass = "ranger";
+  rpgClass = "ranger";
+  const rpgClassValue = rpgClass;
+  localStorage.setItem("rpgClass", rpgClassValue);
   console.log("");
 }
 function mageClass() {
-  let rpgClass = "mage";
+  rpgClass = "mage";
+  const rpgClassValue = rpgClass;
+  localStorage.setItem("rpgClass", rpgClassValue);
   console.log("");
 }
 function paladinClass() {
-  let rpgClass = "paladin";
+  rpgClass = "paladin";
+  const rpgClassValue = rpgClass;
+  localStorage.setItem("rpgClass", rpgClassValue);
   console.log("");
 }
 function berserkerClass() {
-  let rpgClass = "berserker";
+  rpgClass = "berserker";
+  const rpgClassValue = rpgClass;
+  localStorage.setItem("rpgClass", rpgClassValue);
   console.log("");
 }
 function druidClass() {
-  let rpgClass = "druid";
+  rpgClass = "druid";
+  const rpgClassValue = rpgClass;
+  localStorage.setItem("rpgClass", rpgClassValue);
   console.log("");
 }
 function alchemistClass() {
-  let rpgClass = "alchemist";
+  rpgClass = "alchemist";
+  const rpgClassValue = rpgClass;
+  localStorage.setItem("rpgClass", rpgClassValue);
   console.log("");
 }
-
-export let rpgClass;
