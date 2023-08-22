@@ -1,0 +1,51 @@
+.title {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: none;
+  margin-top: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+.subTitle {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: none;
+}
+.tableBlockRow1 {
+  display: inline-block;
+  padding: 50px;
+  margin-left: 125px;
+  margin-right: 125px;
+}
+.tableBlockRow2 {
+  display: inline-block;
+  padding: 50px;
+  margin-left: 125px;
+  margin-right: 125px;
+}
+.tableBlockRow3 {
+  display: inline-block;
+  padding: 50px;
+  margin-left: 125px;
+  margin-right: 125px;
+}
+.tableBlockText {
+  text-align: center;
+}
+.backButton {
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 535px;
+  margin-right: 535px;
+  margin-bottom: 20px;
+  color: black;
+}
+.backButton:hover {
+  color: white;
+  background-color: black;
+}
