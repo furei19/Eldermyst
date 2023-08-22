@@ -1,5 +1,3 @@
-let rpgRace;
-
 // Race variables
 
 const human = document.querySelector("#human");

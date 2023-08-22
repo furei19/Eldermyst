@@ -1,5 +1,4 @@
-import rpgRace from rpgRace;
-import rpgClass from rpgClass;
+import { rpgClass } from "./rpgClass";
 
 let xp = 0;
 let healthPoints = 100;
@@ -9,5 +8,4 @@ let fighting;
 let monsterHealth;
 let inventory;
 
-console.log(rpgRace);
-console.log(rpgClass)
+console.log(rpgClass);

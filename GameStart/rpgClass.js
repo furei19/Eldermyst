@@ -21,30 +21,32 @@ alchemist.onclick = alchemistClass;
 // Functions
 
 function knightClass() {
-  rpgClass = "knight";
+  let rpgClass = "knight";
   console.log("");
 }
 function rangerClass() {
-  rpgClass = "ranger";
+  let rpgClass = "ranger";
   console.log("");
 }
 function mageClass() {
-  rpgClass = "mage";
+  let rpgClass = "mage";
   console.log("");
 }
 function paladinClass() {
-  rpgClass = "paladin";
+  let rpgClass = "paladin";
   console.log("");
 }
 function berserkerClass() {
-  rpgClass = "berserker";
+  let rpgClass = "berserker";
   console.log("");
 }
 function druidClass() {
-  rpgClass = "druid";
+  let rpgClass = "druid";
   console.log("");
 }
 function alchemistClass() {
-  rpgClass = "alchemist";
+  let rpgClass = "alchemist";
   console.log("");
 }
+
+export let rpgClass;
