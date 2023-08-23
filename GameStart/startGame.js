@@ -7,4 +7,6 @@ let monsterHealth;
 let inventory;
 
 const rpgClassName = localStorage.getItem("rpgClass");
+const rpgRaceName = localStorage.getItem("rpgRace");
+console.log(rpgRaceName);
 console.log(rpgClassName);

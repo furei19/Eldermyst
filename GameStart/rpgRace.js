@@ -20,25 +20,37 @@ beast.onclick = beastRace;
 
 function humanRace() {
   rpgRace = "human";
+  const rpgClassValue = rpgRace;
+  localStorage.setItem("rpgRace", rpgClassValue);
   console.log("human");
 }
 function elfRace() {
   rpgRace = "elf";
+  const rpgClassValue = rpgRace;
+  localStorage.setItem("rpgRace", rpgClassValue);
   console.log("elf");
 }
 function dwarfRace() {
   rpgRace = "dwarf";
+  const rpgClassValue = rpgRace;
+  localStorage.setItem("rpgRace", rpgClassValue);
   console.log("dwarf");
 }
 function giantRace() {
   rpgRace = "giant";
+  const rpgClassValue = rpgRace;
+  localStorage.setItem("rpgRace", rpgClassValue);
   console.log("giant");
 }
 function orcRace() {
   rpgRace = "orc";
+  const rpgClassValue = rpgRace;
+  localStorage.setItem("rpgRace", rpgClassValue);
   console.log("orc");
 }
 function beastRace() {
   rpgRace = "beast";
+  const rpgClassValue = rpgRace;
+  localStorage.setItem("rpgRace", rpgClassValue);
   console.log("beast");
 }
