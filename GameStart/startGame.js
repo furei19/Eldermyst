@@ -7,6 +7,33 @@ let monsterHealth;
 let inventory;
 
 const rpgClassName = localStorage.getItem("rpgClass");
-const rpgRaceName = localStorage.getItem("rpgRace");
+let rpgRaceName = localStorage.getItem("rpgRace");
+let Element = document.getElementById("heading");
+const next = document.querySelector("#next");
+
+next.onclick = nextClick;
+
+if (rpgRaceName === "human") {
+  raceKingdom = "Avaloria";
+  console.log("human");
+} else if (rpgRaceName === "elf") {
+  raceKingdom = "Elf Kingdom";
+  console.log("elf");
+} else if (rpgRaceName === "dwarf") {
+  raceKingdom = "Dwarf Kingdom";
+} else if (rpgRaceName === "giant") {
+  raceKingdom = "Valerius";
+} else if (rpgRaceName === "Orc") {
+  raceKingdom = "Orc Kingdom";
+} else if (rpgRaceName === "beastkin") {
+  raceKingdom = "Beastkin Teritorries";
+} else if (rpgRaceName === "mutant") {
+  raceKingdom = "Mutant Teritorries";
+}
+
+function nextClick() {
+  Element.innerHTML = raceKingdom;
+}
+
 console.log(rpgRaceName);
 console.log(rpgClassName);

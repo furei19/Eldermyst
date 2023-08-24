@@ -6,8 +6,77 @@
     <title>Eldermyst</title>
   </head>
   <body>
-    <div>
-      <p class="heading">Eldermyst</p>
+    <div class="divLeftMain">
+      <div class="divLeftBorder">
+        <p class="statsTitle" id="rpgName">Player Name</p>
+        <table class="divLeftContent">
+          <tr>
+            <td>
+              <p>Health:</p>
+            </td>
+            <td>
+              <p id="playerHealth">100</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Mana:</p>
+            </td>
+            <td>
+              <p id="playerMana">100</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>EXP:</p>
+            </td>
+            <td>
+              <p id="exp">0</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="divBottomBorder">
+        <p class="statsTitle">Events</p>
+        <p class="statsTitle" id="playerEvent">-----</p>
+        <p class="statsTitle" id="monsterEvent">-----</p>
+        <p class="statsTitle" id="dice">Dice Here</p>
+      </div>
+    </div>
+    <div class="divRightMain">
+      <div class="divRightBorder">
+        <p class="statsTitle">Monster Name</p>
+        <table class="divRightContent">
+          <tr>
+            <td>
+              <p>Health:</p>
+            </td>
+            <td>
+              <p id="monsterHealth">100</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Mana:</p>
+            </td>
+            <td>
+              <p id="monsterMana">100</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="divBottomBorder">
+        <p class="statsTitle">Quest Board</p>
+        <p class="takenQuest" id="takenQuest">-----</p>
+        <p class="takenQuest" id="takenQuest">-----</p>
+        <p class="takenQuest" id="takenQuest">-----</p>
+        <p class="takenQuest" id="takenQuest">-----</p>
+        <p class="takenQuest" id="takenQuest">-----</p>
+      </div>
+    </div>
+    <div class="divMid">
+      <p class="heading" id="heading">Eldermyst</p>
+      <p class="scene">Scene here</p>
       <p class="content" id="contentId">
         In a realm distant from our own, where diverse creatures and enigmatic
         entities once lived in harmony, a transformative shift began to unravel
@@ -27,7 +96,8 @@
       <center>
         <p class="button">Inventory</p>
         <p class="button">Map</p>
-        <p class="button">Next</p>
+        <p class="button">Return</p>
+        <p class="button" id="next">Next</p>
         <a href="../index.html" class="button">Quit Game</a>
       </center>
     </div>

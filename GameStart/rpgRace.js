@@ -5,7 +5,8 @@ const elf = document.querySelector("#elf");
 const dwarf = document.querySelector("#dwarf");
 const giant = document.querySelector("#giant");
 const orc = document.querySelector("#orc");
-const beast = document.querySelector("#beast");
+const beastkin = document.querySelector("#beastkin");
+const mutant = document.querySelector("#mutant");
 
 // buttons
 
@@ -14,7 +15,8 @@ elf.onclick = elfRace;
 dwarf.onclick = dwarfRace;
 giant.onclick = giantRace;
 orc.onclick = orcRace;
-beast.onclick = beastRace;
+beastkin.onclick = beastRace;
+mutant.onclick = mutantRace;
 
 // Functions
 
@@ -49,7 +51,13 @@ function orcRace() {
   console.log("orc");
 }
 function beastRace() {
-  rpgRace = "beast";
+  rpgRace = "beastkin";
+  const rpgClassValue = rpgRace;
+  localStorage.setItem("rpgRace", rpgClassValue);
+  console.log("beast");
+}
+function mutantRace() {
+  rpgRace = "mutant";
   const rpgClassValue = rpgRace;
   localStorage.setItem("rpgRace", rpgClassValue);
   console.log("beast");
