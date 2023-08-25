@@ -1,8 +1,15 @@
 * {
   font-family: "Courier New", Courier, monospace;
 }
+body {
+  width: 1355px;
+  height: 135px;
+  margin: auto;
+}
 .bg {
   background-image: url("Images/Eldermyst.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .title {
   text-align: center;
@@ -15,10 +22,10 @@
   border: 2px solid black;
   padding: 10px;
   display: block;
+  width: 200px;
   text-align: center;
   font-size: 25px;
-  margin-left: 535px;
-  margin-right: 535px;
+  margin: auto;
   margin-bottom: 20px;
   color: white;
   background-color: black;
