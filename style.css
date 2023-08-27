@@ -1,0 +1,58 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  width: 1355px;
+  height: 135px;
+  margin: auto;
+}
+.bg {
+  background-image: url("Images/Eldermyst.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title {
+  text-align: center;
+  font-size: 90px;
+  text-decoration: none;
+  margin-top: 50px;
+}
+.buttons {
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px;
+  display: block;
+  width: 200px;
+  text-align: center;
+  font-size: 25px;
+  margin: auto;
+  margin-bottom: 20px;
+  color: white;
+  background-color: black;
+}
+.buttons:hover {
+  color: black;
+  background-color: white;
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    width: 720px;
+    margin: auto;
+  }
+
+  .bg {
+    background-image: url("Images/Eldermyst.png");
+    background-repeat: no-repeat;
+    background-size: 2300px;
+    background-position-y: top;
+    background-position-x: center;
+  }
+  .title {
+    display: block;
+    text-align: center;
+    font-size: 90px;
+    text-decoration: none;
+    margin-top: 350px;
+  }
+}
