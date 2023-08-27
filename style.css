@@ -45,6 +45,7 @@ body {
     background-image: url("Images/Eldermyst.png");
     background-repeat: no-repeat;
     background-size: 2300px;
+    background-position-y: top;
     background-position-x: center;
   }
   .title {
