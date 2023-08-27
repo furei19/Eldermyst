@@ -8,7 +8,6 @@ let inventory;
 
 const rpgClassName = localStorage.getItem("rpgClass");
 let rpgRaceName = localStorage.getItem("rpgRace");
-let Element = document.getElementById("heading");
 const next = document.querySelector("#next");
 
 next.onclick = nextClick;
@@ -23,7 +22,7 @@ if (rpgRaceName === "human") {
   raceKingdom = "Dwarf Kingdom";
 } else if (rpgRaceName === "giant") {
   raceKingdom = "Valerius";
-} else if (rpgRaceName === "Orc") {
+} else if (rpgRaceName === "orc") {
   raceKingdom = "Orc Kingdom";
 } else if (rpgRaceName === "beastkin") {
   raceKingdom = "Beastkin Teritorries";
@@ -32,8 +31,5 @@ if (rpgRaceName === "human") {
 }
 
 function nextClick() {
-  Element.innerHTML = raceKingdom;
+  document.getElementById("heading").innerHTML = raceKingdom;
 }
-
-console.log(rpgRaceName);
-console.log(rpgClassName);

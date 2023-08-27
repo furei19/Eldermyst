@@ -60,13 +60,18 @@ a {
   margin-top: 30px;
   border: 2px solid black;
 }
+.contentBorder {
+  border: 2px solid black;
+  height: 350px;
+}
 .content {
   text-align: justify;
   font-size: 20px;
-  border: 2px solid black;
-  padding: 20px;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.divContent {
+  display: inline-block;
 }
 .scene {
   text-align: center;
@@ -80,6 +85,7 @@ a {
 }
 .button {
   user-select: none;
+  width: 100px;
   display: inline-block;
   text-align: center;
   border: 2px solid black;
@@ -90,4 +96,49 @@ a {
 .button:hover {
   color: white;
   background-color: black;
+}
+@media only screen and (max-width: 720px) {
+  body {
+    width: 720px;
+    height: 1280px;
+    margin: auto;
+  }
+  .divMid {
+    width: 400px;
+    margin: auto;
+  }
+  .divLeftMain {
+    float: left;
+    width: 140px;
+    padding: 10px;
+    margin: auto;
+    display: block;
+  }
+  .divRightMain {
+    float: right;
+    width: 140px;
+    padding: 10px;
+    margin: auto;
+    display: block;
+  }
+  .divRightBorder {
+    border: 2px solid black;
+  }
+  .divLeftBorder {
+    border: 2px solid black;
+  }
+  .divBottomBorder {
+    margin-top: 20px;
+    border: 2px solid black;
+  }
+  .divLeftContent {
+    font-size: 20px;
+  }
+  .divRightContent {
+    font-size: 20px;
+  }
+  .contentBorder {
+    border: 2px solid black;
+    height: 600px;
+  }
 }

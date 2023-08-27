@@ -8,22 +8,23 @@ body {
   font-size: 40px;
   text-decoration: none;
   margin-top: 50px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
 }
 .subTitle {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-size: 35px;
   text-decoration: none;
 }
 div {
-  width: 900px;
+  width: 1000px;
   margin: auto;
   text-align: center;
 }
 .button {
   border: 2px solid black;
   font-size: 20px;
+  width: 100px;
   display: inline-block;
   padding: 10px;
   text-decoration: none;
@@ -47,7 +48,7 @@ div {
   padding: 50px;
 }
 .backButton {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
   text-decoration: none;
   border: 2px solid black;
   padding: 10px;
@@ -67,4 +68,56 @@ div {
 .tableBlock {
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (max-width: 720px) {
+  body {
+    width: 720px;
+    height: 1280px;
+    margin: auto;
+  }
+  div {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  .title {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    margin-top: 100px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .backButton {
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    color: black;
+  }
+  .button {
+    border: 2px solid black;
+    font-size: 25px;
+    width: 100px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10%;
+  }
+  .tableBlockRow1 {
+    display: inline-block;
+    padding: 5px;
+  }
+  .tableBlockRow2 {
+    display: inline-block;
+    padding: 5px;
+  }
+  .tableBlockRow3 {
+    display: inline-block;
+    padding: 5px;
+  }
 }

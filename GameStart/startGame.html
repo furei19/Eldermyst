@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,38 +10,41 @@
     <div class="divLeftMain">
       <div class="divLeftBorder">
         <p class="statsTitle" id="rpgName">Player Name</p>
-        <table class="divLeftContent">
-          <tr>
-            <td>
-              <p>Health:</p>
-            </td>
-            <td>
-              <p id="playerHealth">100</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Mana:</p>
-            </td>
-            <td>
-              <p id="playerMana">100</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>EXP:</p>
-            </td>
-            <td>
-              <p id="exp">0</p>
-            </td>
-          </tr>
-        </table>
+        <div class="divLeftContent">
+          <div>
+            <p class="divContent">Health:</p>
+            <p class="divContent" id="playerHealth">100</p>
+          </div>
+          <div>
+            <p class="divContent">Mana:</p>
+            <p class="divContent" id="playerMana">100</p>
+          </div>
+          <div>
+            <p class="divContent">Gold:</p>
+            <p class="divContent" id="playerGold">0</p>
+          </div>
+          <div>
+            <p class="divContent">EXP:</p>
+            <p class="divContent" id="playerEXP">0</p>
+          </div>
+          <div>
+            <p class="divContent">Level:</p>
+            <p class="divContent" id="playerLevel">1</p>
+          </div>
+        </div>
       </div>
       <div class="divBottomBorder">
         <p class="statsTitle">Events</p>
         <p class="statsTitle" id="playerEvent">-----</p>
         <p class="statsTitle" id="monsterEvent">-----</p>
         <p class="statsTitle" id="dice">Dice Here</p>
+      </div>
+      <div>
+        <p class="button">Skills</p>
+        <p class="button">Inventory</p>
+      </div>
+      <div>
+        <p class="button">Map</p>
       </div>
     </div>
     <div class="divRightMain">
@@ -68,34 +72,37 @@
       <div class="divBottomBorder">
         <p class="statsTitle">Quest Board</p>
         <p class="takenQuest" id="takenQuest">-----</p>
-        <p class="takenQuest" id="takenQuest">-----</p>
-        <p class="takenQuest" id="takenQuest">-----</p>
-        <p class="takenQuest" id="takenQuest">-----</p>
-        <p class="takenQuest" id="takenQuest">-----</p>
+      </div>
+      <div>
+        <p class="button">Shop</p>
+        <p class="button">Explore</p>
+      </div>
+      <div>
+        <p class="button">Town Quests</p>
       </div>
     </div>
     <div class="divMid">
       <p class="heading" id="heading">Eldermyst</p>
       <p class="scene">Scene here</p>
-      <p class="content" id="contentId">
-        In a realm distant from our own, where diverse creatures and enigmatic
-        entities once lived in harmony, a transformative shift began to unravel
-        the delicate balance. As the powerful seized control and the cries of
-        the defenseless echoed through the land, an unsettling chaos began to
-        unfurl its dark wings. It was in the midst of this tumultuous upheaval
-        that the world fractured, splitting into three distinct realms, each
-        bearing its own mystique and allure. The first, known as Alterra,
-        nestled in the depths, whispered secrets of forgotten mysteries. Above
-        it lay Arcanterra, the middle realm, where enigmas intertwined with
-        reality in an intricate dance. And high above them all, beyond the
-        ethereal veil, stretched Aetheris, a realm of boundless wonder and
-        untamed dreams. Thus, the tale of these interconnected realms was set
-        into motion, where destinies entwined and the very fabric of existence
-        hung in a delicate balance.
-      </p>
+      <div class="contentBorder">
+        <p class="content" id="contentId">
+          In a realm distant from our own, where diverse creatures and enigmatic
+          entities once lived in harmony, a transformative shift began to
+          unravel the delicate balance. As the powerful seized control and the
+          cries of the defenseless echoed through the land, an unsettling chaos
+          began to unfurl its dark wings. It was in the midst of this tumultuous
+          upheaval that the world fractured, splitting into three distinct
+          realms, each bearing its own mystique and allure. The first, known as
+          Alterra, nestled in the depths, whispered secrets of forgotten
+          mysteries. Above it lay Arcanterra, the middle realm, where enigmas
+          intertwined with reality in an intricate dance. And high above them
+          all, beyond the ethereal veil, stretched Aetheris, a realm of
+          boundless wonder and untamed dreams. Thus, the tale of these
+          interconnected realms was set into motion, where destinies entwined
+          and the very fabric of existence hung in a delicate balance.
+        </p>
+      </div>
       <center>
-        <p class="button">Inventory</p>
-        <p class="button">Map</p>
         <p class="button">Return</p>
         <p class="button" id="next">Next</p>
         <a href="../index.html" class="button">Quit Game</a>
