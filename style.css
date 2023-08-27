@@ -34,3 +34,36 @@ body {
   color: black;
   background-color: white;
 }
+
+@media only screen and (max-width: 720px) {
+  body {
+    width: 720px;
+    height: 1280px;
+    margin: auto;
+  }
+
+  .bg {
+    background-image: url("Images/Eldermyst.png");
+    background-repeat: no-repeat;
+    background-size: 2300px;
+    background-position-x: center;
+  }
+  .title {
+    text-align: center;
+    text-decoration: none;
+    margin-top: 300px;
+  }
+  .buttons {
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px;
+    display: block;
+    width: 350px;
+    text-align: center;
+    font-size: 45px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+  }
+}
