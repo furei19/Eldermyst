@@ -8,7 +8,7 @@ let inventory;
 
 const rpgClassName = localStorage.getItem("rpgClass");
 let rpgRaceName = localStorage.getItem("rpgRace");
-const next = document.querySelector("#next");
+let next = document.querySelector("#next");
 
 next.onclick = nextClick;
 
@@ -32,4 +32,41 @@ if (rpgRaceName === "human") {
 
 function nextClick() {
   document.getElementById("heading").innerHTML = raceKingdom;
+}
+function panelButtonWidthOpacityToZero() {
+  document.getElementById("leftPanelWidth").style.width = "0px";
+  document.getElementById("leftPanelWidth").style.opacity = "0";
+  document.getElementById("rightPanelWidth").style.width = "0px";
+  document.getElementById("rightPanelWidth").style.opacity = "0";
+}
+function panelButtonWidthOpacityToOneH() {
+  document.getElementById("leftPanelWidth").style.opacity = "100";
+  document.getElementById("rightPanelWidth").style.opacity = "100";
+  document.getElementById("leftPanelWidth").style.width = "100px";
+  document.getElementById("rightPanelWidth").style.width = "100px";
+}
+
+function openLeftPanel() {
+  document.getElementById("leftSidePanel").style.width = "300px";
+  document.getElementById("sidepanelOpacity").style.opacity = "100";
+  document.getElementById("closeSidePanel").style.opacity = "100";
+  panelButtonWidthOpacityToZero();
+}
+function closeLeftPanel() {
+  document.getElementById("leftSidePanel").style.width = "0px";
+  document.getElementById("sidepanelOpacity").style.opacity = "0";
+  document.getElementById("closeSidePanel").style.opacity = "0";
+  panelButtonWidthOpacityToOneH();
+}
+function openRightPanel() {
+  document.getElementById("rightSidePanel").style.width = "300px";
+  document.getElementById("rightSidePanel").style.opacity = "100";
+  document.getElementById("closeRightPanel").style.opacity = "100";
+  panelButtonWidthOpacityToZero();
+}
+function closeRightPanel() {
+  document.getElementById("rightSidePanel").style.width = "0px";
+  document.getElementById("rightSidePanel").style.opacity = "0";
+  document.getElementById("closeRightPanel").style.opacity = "0";
+  panelButtonWidthOpacityToOneH();
 }

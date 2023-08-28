@@ -7,48 +7,68 @@
     <title>Eldermyst</title>
   </head>
   <body>
-    <div class="divLeftMain">
-      <div class="divLeftBorder">
-        <p class="statsTitle" id="rpgName">Player Name</p>
-        <div class="divLeftContent">
-          <div>
-            <p class="divContent">Health:</p>
-            <p class="divContent" id="playerHealth">100</p>
-          </div>
-          <div>
-            <p class="divContent">Mana:</p>
-            <p class="divContent" id="playerMana">100</p>
-          </div>
-          <div>
-            <p class="divContent">Gold:</p>
-            <p class="divContent" id="playerGold">0</p>
-          </div>
-          <div>
-            <p class="divContent">EXP:</p>
-            <p class="divContent" id="playerEXP">0</p>
-          </div>
-          <div>
-            <p class="divContent">Level:</p>
-            <p class="divContent" id="playerLevel">1</p>
+    <div style="float: left">
+      <p class="panelButton" onclick="openLeftPanel()" id="leftPanelWidth">
+        Inventory
+      </p>
+      <p class="panelButton" onclick="openRightPanel()" id="rightPanelWidth">
+        Events
+      </p>
+      <p class="panelButton">Shop</p>
+    </div>
+    <div class="divLeftMain" id="leftSidePanel">
+      <p
+        class="button"
+        onclick="closeLeftPanel()"
+        id="closeSidePanel"
+        style="opacity: 0; margin-top: 40px"
+      >
+        Close
+      </p>
+      <hr />
+      <div class="sidepanelOpacity" id="sidepanelOpacity">
+        <div>
+          <p class="statsTitle" id="rpgName">Player Name</p>
+          <div class="divLeftContent">
+            <div>
+              <p class="divContent">Health:</p>
+              <p class="divContent" id="playerHealth">100</p>
+            </div>
+            <div>
+              <p class="divContent">Mana:</p>
+              <p class="divContent" id="playerMana">100</p>
+            </div>
+            <div>
+              <p class="divContent">Gold:</p>
+              <p class="divContent" id="playerGold">0</p>
+            </div>
+            <div>
+              <p class="divContent">EXP:</p>
+              <p class="divContent" id="playerEXP">0</p>
+            </div>
+            <div>
+              <p class="divContent">Level:</p>
+              <p class="divContent" id="playerLevel">1</p>
+            </div>
+            <hr />
+            <div>
+              <p class="divContent">Inventory</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="divBottomBorder">
-        <p class="statsTitle">Events</p>
-        <p class="statsTitle" id="playerEvent">-----</p>
-        <p class="statsTitle" id="monsterEvent">-----</p>
-        <p class="statsTitle" id="dice">Dice Here</p>
-      </div>
-      <div>
-        <p class="button">Skills</p>
-        <p class="button">Inventory</p>
-      </div>
-      <div>
-        <p class="button">Map</p>
-      </div>
     </div>
-    <div class="divRightMain">
-      <div class="divRightBorder">
+    <div class="divRightMain" id="rightSidePanel">
+      <p
+        class="button"
+        onclick="closeRightPanel()"
+        id="closeRightPanel"
+        style="opacity: 0; margin-top: 40px"
+      >
+        Close
+      </p>
+      <hr />
+      <div>
         <p class="statsTitle">Monster Name</p>
         <table class="divRightContent">
           <tr>
@@ -73,18 +93,17 @@
         <p class="statsTitle">Quest Board</p>
         <p class="takenQuest" id="takenQuest">-----</p>
       </div>
-      <div>
-        <p class="button">Shop</p>
-        <p class="button">Explore</p>
-      </div>
-      <div>
-        <p class="button">Town Quests</p>
+      <div class="divBottomBorder">
+        <p class="statsTitle">Events</p>
+        <p class="statsTitle" id="playerEvent">-----</p>
+        <p class="statsTitle" id="monsterEvent">-----</p>
+        <p class="statsTitle" id="dice">Dice Here</p>
       </div>
     </div>
     <div class="divMid">
       <p class="heading" id="heading">Eldermyst</p>
       <p class="scene">Scene here</p>
-      <div class="contentBorder">
+      <div>
         <p class="content" id="contentId">
           In a realm distant from our own, where diverse creatures and enigmatic
           entities once lived in harmony, a transformative shift began to
